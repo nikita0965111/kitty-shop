@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мурчальня — розплідник породистих кошенят</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 10L10 20" stroke="#20261F" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M34 10L38 20" stroke="#20261F" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="24" cy="27" r="14" fill="#20261F"/>
+        <circle cx="19" cy="25" r="1.6" fill="#F3EEE1"/>
+        <circle cx="29" cy="25" r="1.6" fill="#F3EEE1"/>
+        <path d="M21 31c1.2 1.2 4.8 1.2 6 0" stroke="#F3EEE1" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      Мурчальня
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#catalog">Каталог</a>
+      <a href="about.html">Про розплідник</a>
+      <a href="process.html">Процес</a>
+      <a href="index.html#testimonials">Відгуки</a>
+      <a href="index.html#contact">Контакти</a>
+    </nav>
+    <a href="index.html#contact" class="nav-cta">Написати нам</a>
+    <button class="burger" id="burgerBtn" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="index.html#catalog">Каталог</a>
+    <a href="about.html">Про розплідник</a>
+    <a href="process.html">Процес</a>
+    <a href="index.html#testimonials">Відгуки</a>
+    <a href="index.html#contact">Написати нам</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>Розплідник у Львові · з 2013 року</div>
+      <h1>Домашній затишок починається з <em>правильного кошеняти</em></h1>
+      <p class="lead">Ми розводимо британських, шотландських та мейн-кунів невеликими виводками — щоб кожне кошеня росло серед людей, а не в клітці. Повний пакет документів, щеплення та підтримка після переїзду додому.</p>
+      <div class="hero-actions">
+        <a href="#catalog" class="btn-primary">
+          Переглянути кошенят
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="process.html" class="btn-ghost">Як відбувається передача</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>11</b><span>років розплідника</span></div>
+        <div class="stat"><b>214</b><span>кошенят знайшли дім</span></div>
+        <div class="stat"><b>3</b><span>породи, які ми ведемо</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="art-blob">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M60 40L44 78" stroke="#F3EEE1" stroke-width="6" stroke-linecap="round"/>
+          <path d="M140 40L156 78" stroke="#F3EEE1" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="100" cy="112" r="58" fill="#F3EEE1"/>
+          <circle cx="82" cy="104" r="6" fill="#20261F"/>
+          <circle cx="118" cy="104" r="6" fill="#20261F"/>
+          <path d="M92 122c5 5 11 5 16 0" stroke="#20261F" stroke-width="4" stroke-linecap="round"/>
+          <path d="M60 130q-14 4 -18 16" stroke="#20261F" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+          <path d="M140 130q14 4 18 16" stroke="#20261F" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+        </svg>
+      </div>
+      <div class="float-badge b1">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#B5714F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Ветеринарний паспорт
+      </div>
+      <div class="float-badge b2">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#B5714F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Родовід WCF
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="catalog">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Кошенята, які зараз шукають дім</h2>
+      <p>Кожне кошеня оглянуте ветеринаром, привчене до лотка та готове до переїзду з 12 тижнів.</p>
+    </div>
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-filter="all">Усі</button>
+      <button class="filter-btn" data-filter="british">Британці</button>
+      <button class="filter-btn" data-filter="scottish">Шотландці</button>
+      <button class="filter-btn" data-filter="mainecoon">Мейн-куни</button>
+    </div>
+    <div class="cat-grid" id="catGrid">
+
+      <div class="cat-card" data-breed="british">
+        <div class="swatch" style="background:#DCD3BE;">
+          <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="56" r="28" fill="#8C8477"/><path d="M32 34l-8 18M68 34l8 18" stroke="#8C8477" stroke-width="5" stroke-linecap="round"/><circle cx="42" cy="52" r="3" fill="#F3EEE1"/><circle cx="58" cy="52" r="3" fill="#F3EEE1"/></svg>
+        </div>
+        <div class="body">
+          <span class="tag">Дівчинка</span>
+          <div class="row1"><h3>Гортензія</h3><span class="price">18 500 ₴</span></div>
+          <div class="meta">Британська короткошерста · 13 тижнів · блакитний окрас</div>
+          <p class="desc">Спокійна і ласкава, любить спостерігати за вікном і засинати на руках.</p>
+          <a href="index.html#contact" class="link">Запитати про Гортензію
+            <svg viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="cat-card" data-breed="scottish">
+        <div class="swatch" style="background:#E4D9CB;">
+          <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="56" r="28" fill="#A98F6E"/><path d="M32 38q-4 -6 -2 -10M68 38q4 -6 2 -10" stroke="#A98F6E" stroke-width="6" stroke-linecap="round"/><circle cx="42" cy="52" r="3" fill="#F3EEE1"/><circle cx="58" cy="52" r="3" fill="#F3EEE1"/></svg>
+        </div>
+        <div class="body">
+          <span class="tag">Хлопчик</span>
+          <div class="row1"><h3>Кориця</h3><span class="price">21 000 ₴</span></div>
+          <div class="meta">Шотландський вислухий · 11 тижнів · кремовий окрас</div>
+          <p class="desc">Грайливий та товариський, вже освоїв драпку і грається з іграшками-вудочками.</p>
+          <a href="index.html#contact" class="link">Запитати про Корицю
+            <svg viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="cat-card" data-breed="mainecoon">
+        <div class="swatch" style="background:#D8CFC0;">
+          <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="58" r="26" fill="#6B5B44"/><path d="M28 40l-10 14M72 40l10 14" stroke="#6B5B44" stroke-width="6" stroke-linecap="round"/><circle cx="41" cy="54" r="3" fill="#F3EEE1"/><circle cx="59" cy="54" r="3" fill="#F3EEE1"/></svg>
+        </div>
+        <div class="body">
+          <span class="tag">Дівчинка</span>
+          <div class="row1"><h3>Береза</h3><span class="price">26 000 ₴</span></div>
+          <div class="meta">Мейн-кун · 14 тижнів · тигровий окрас</div>
+          <p class="desc">Велика й доброзичлива порода, легко уживається з дітьми та іншими тваринами.</p>
+          <a href="index.html#contact" class="link">Запитати про Березу
+            <svg viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="cat-card" data-breed="british">
+        <div class="swatch" style="background:#E8E1D2;">
+          <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="56" r="28" fill="#B7ADA0"/><path d="M32 34l-8 18M68 34l8 18" stroke="#B7ADA0" stroke-width="5" stroke-linecap="round"/><circle cx="42" cy="52" r="3" fill="#20261F"/><circle cx="58" cy="52" r="3" fill="#20261F"/></svg>
+        </div>
+        <div class="body">
+          <span class="tag">Хлопчик</span>
+          <div class="row1"><h3>Персик</h3><span class="price">19 500 ₴</span></div>
+          <div class="meta">Британська короткошерста · 12 тижнів · лілачний окрас</div>
+          <p class="desc">Незалежний і спостережливий, обожнює високі поличкі та ранкове сонце.</p>
+          <a href="index.html#contact" class="link">Запитати про Персика
+            <svg viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="cat-card" data-breed="scottish">
+        <div class="swatch" style="background:#EAE2D3;">
+          <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="56" r="28" fill="#7C6A54"/><path d="M32 38q-4 -6 -2 -10M68 38q4 -6 2 -10" stroke="#7C6A54" stroke-width="6" stroke-linecap="round"/><circle cx="42" cy="52" r="3" fill="#F3EEE1"/><circle cx="58" cy="52" r="3" fill="#F3EEE1"/></svg>
+        </div>
+        <div class="body">
+          <span class="tag">Дівчинка</span>
+          <div class="row1"><h3>Азалія</h3><span class="price">20 500 ₴</span></div>
+          <div class="meta">Шотландська пряма · 13 тижнів · сірий окрас</div>
+          <p class="desc">М'яка й довірлива, любить сидіти поруч і стежити за домашніми справами.</p>
+          <a href="index.html#contact" class="link">Запитати про Азалію
+            <svg viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="cat-card" data-breed="mainecoon">
+        <div class="swatch" style="background:#DDD2BC;">
+          <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="58" r="26" fill="#4C4438"/><path d="M28 40l-10 14M72 40l10 14" stroke="#4C4438" stroke-width="6" stroke-linecap="round"/><circle cx="41" cy="54" r="3" fill="#F3EEE1"/><circle cx="59" cy="54" r="3" fill="#F3EEE1"/></svg>
+        </div>
+        <div class="body">
+          <span class="tag">Хлопчик</span>
+          <div class="row1"><h3>Дуб</h3><span class="price">27 500 ₴</span></div>
+          <div class="meta">Мейн-кун · 15 тижнів · чорний димчастий</div>
+          <p class="desc">Спокійний велетень з тихим голосом, вже звик до шлейки для прогулянок.</p>
+          <a href="index.html#contact" class="link">Запитати про Дуба
+            <svg viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <div class="about-art">
+      <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M70 50L52 92" stroke="#F3EEE1" stroke-width="6" stroke-linecap="round"/>
+        <path d="M130 50L148 92" stroke="#F3EEE1" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="100" cy="122" r="52" fill="#F3EEE1"/>
+        <circle cx="84" cy="116" r="5" fill="#20261F"/>
+        <circle cx="116" cy="116" r="5" fill="#20261F"/>
+        <path d="M92 132c5 4 11 4 16 0" stroke="#20261F" stroke-width="3.5" stroke-linecap="round"/>
+        <path d="M60 150q40 22 80 0" stroke="#F3EEE1" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+      </svg>
+    </div>
+    <div class="about-text">
+      <h2>Розплідник на 6 родин, а не на 60 кошенят</h2>
+      <p>Ми свідомо тримаємо трьох кішок-мам одночасно — не більше. Кожне кошеня росте у вітальні, чує побутові звуки, звикає до дітей та інших тварин ще до того, як переїде у ваш дім.</p>
+      <p>Ми ведемо документацію породи через клуб WCF, робимо генетичні тести батьківських пар і не в'яжемо кішок частіше, ніж раз на рік.</p>
+      <ul class="about-list">
+        <li>
+          <svg viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Генетичне тестування обох батьків перед в'язкою
+        </li>
+        <li>
+          <svg viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Кошенята залишаються з мамою мінімум 12 тижнів
+        </li>
+        <li>
+          <svg viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Підтримка з адаптацією протягом перших 30 днів удома
+        </li>
+      </ul>
+      <div style="margin-top:30px;">
+        <a href="about.html" class="btn-ghost">Детальніше про розплідник</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="process" style="background:var(--cream-dim);">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Як відбувається передача кошеняти</h2>
+      <p>Прозорий процес у чотири кроки — від першого знайомства до дня переїзду.</p>
+    </div>
+    <div class="process-list">
+      <div class="process-item">
+        <div class="num">01</div>
+        <div><h3>Знайомство і консультація</h3><p>Обговорюємо ваш спосіб життя, помешкання та досвід з тваринами, щоб підібрати кошеня, яке справді підійде саме вам.</p></div>
+      </div>
+      <div class="process-item">
+        <div class="num">02</div>
+        <div><h3>Візит до розплідника</h3><p>Ви приїжджаєте познайомитися з кошеням наживо, бачите умови утримання і батьківську пару.</p></div>
+      </div>
+      <div class="process-item">
+        <div class="num">03</div>
+        <div><h3>Бронювання і документи</h3><p>Оформлюємо договір, ветеринарний паспорт зі щепленнями та родовідні документи клубу WCF.</p></div>
+      </div>
+      <div class="process-item">
+        <div class="num">04</div>
+        <div><h3>День переїзду</h3><p>Кошеня переїжджає з улюбленою іграшкою і ковдрою, що пахне мамою — це полегшує перші дні адаптації.</p></div>
+      </div>
+    </div>
+    <div style="margin-top:30px;">
+      <a href="process.html" class="btn-ghost">Детальніше про процес передачі</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Що входить у кожен переїзд</h2>
+      <p>Ціна кошеняти включає повний ветеринарний і документальний супровід.</p>
+    </div>
+    <div class="guarantee-grid">
+      <div class="guarantee-card">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 4v5c0 5-3 8-7 9-4-1-7-4-7-9V7l7-4z" stroke="currentColor" stroke-width="1.6"/></svg>
+        <h3>Два комплексні щеплення</h3>
+        <p>Із занесенням у ветеринарний паспорт та повторним оглядом лікаря.</p>
+      </div>
+      <div class="guarantee-card">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 6h16M4 18h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <h3>Родовід WCF</h3>
+        <p>Офіційне підтвердження породи та лінії від обох батьків.</p>
+      </div>
+      <div class="guarantee-card">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <h3>30 днів підтримки</h3>
+        <p>Консультації щодо харчування, привчання та поведінки після переїзду.</p>
+      </div>
+      <div class="guarantee-card">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9.5-9C.5 8 2.5 4 6.5 4c2 0 3.5 1.2 4.5 2.5C12 5.2 13.5 4 15.5 4 19.5 4 21.5 8 19.5 12c-2.5 4.65-7.5 9-7.5 9z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <h3>Стерилізація за домовленістю</h3>
+        <p>Допомагаємо організувати процедуру для кошенят не племінного класу.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="testimonials">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 style="color:var(--cream);">Родини, які вже забрали кошеня</h2>
+      <p style="color:var(--cream); opacity:0.65;">Кілька відгуків від власників наших випускників.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <p class="quote">«Гортензія прижилася за два дні — заводчиця дала докладну інструкцію і була на зв'язку весь перший тиждень».</p>
+        <div class="who">Марина, Львів</div>
+      </div>
+      <div class="testi-card">
+        <p class="quote">«Взяли мейн-куна саме тут через генетичні тести батьків — для нас це було головним критерієм вибору».</p>
+        <div class="who">Олексій, Івано-Франківськ</div>
+      </div>
+      <div class="testi-card">
+        <p class="quote">«Всі документи й щеплення були готові одразу, без беготні по клініках. Дуже зручно і чесно».</p>
+        <div class="who">Соломія, Тернопіль</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <h2>Запитайте про кошеня, яке вам сподобалось</h2>
+      <p>Напишіть нам номер породи або ім'я кошеняти — відповідаємо протягом дня і домовляємось про візит.</p>
+      <div class="item">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.6"/><path d="M4 6l8 7 8-7" stroke="currentColor" stroke-width="1.6"/></svg>
+        murchalnya@example.com
+      </div>
+      <div class="item">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h4l2 5-2.5 1.5a12 12 0 006 6L15 14l5 2v4c0 1-1 2-2 2C10 22 2 14 2 6c0-1 1-2 2-2z" stroke="currentColor" stroke-width="1.6"/></svg>
+        +380 67 123 45 67
+      </div>
+      <div class="item">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg>
+        Львів, вул. Кобилянської 14 (за попереднім записом)
+      </div>
+    </div>
+    <form id="contactForm">
+      <div class="field">
+        <label for="name">Ім'я</label>
+        <input id="name" name="name" type="text" placeholder="Ваше ім'я" required>
+      </div>
+      <div class="field">
+        <label for="phone">Телефон</label>
+        <input id="phone" name="phone" type="tel" placeholder="+380" required>
+      </div>
+      <div class="field">
+        <label for="breed">Яка порода цікавить</label>
+        <select id="breed" name="breed">
+          <option>Британська короткошерста</option>
+          <option>Шотландська вислуха / пряма</option>
+          <option>Мейн-кун</option>
+          <option>Ще не визначився(лась)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Повідомлення</label>
+        <textarea id="message" name="message" placeholder="Наприклад: цікавить Гортензія, коли можна приїхати познайомитися?"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Надіслати заявку</button>
+      <p class="form-note">Це демонстраційна форма — підключіть її до власної пошти чи CRM.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M14 10L10 20" stroke="#F3EEE1" stroke-width="2.4" stroke-linecap="round"/><path d="M34 10L38 20" stroke="#F3EEE1" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="27" r="14" fill="#F3EEE1"/><circle cx="19" cy="25" r="1.6" fill="#171C15"/><circle cx="29" cy="25" r="1.6" fill="#171C15"/><path d="M21 31c1.2 1.2 4.8 1.2 6 0" stroke="#171C15" stroke-width="1.6" stroke-linecap="round"/></svg>
+        Мурчальня
+      </div>
+      <div class="footer-links">
+        <div class="col">
+          <span>Розділи</span>
+          <a href="index.html#catalog">Каталог</a>
+          <a href="about.html">Про розплідник</a>
+          <a href="process.html">Процес</a>
+        </div>
+        <div class="col">
+          <span>Контакти</span>
+          <a href="mailto:murchalnya@example.com">murchalnya@example.com</a>
+          <a href="tel:+380671234567">+380 67 123 45 67</a>
+        </div>
+        <div class="col">
+          <span>Соцмережі</span>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Мурчальня. Усі права захищено.</span>
+      <span>Розплідник зареєстрований у клубі WCF</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
